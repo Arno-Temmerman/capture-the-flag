@@ -22,6 +22,8 @@ Your team will try to carry the food on the far side of the map to their home si
      * [Winning](#winning)
      * [Computation Time](#computation-time)
   * [Getting Started](#getting-started)
+     * [Installation](#installation)
+     * [Playing Your First Game](#playing-your-first-game)
      * [Layouts](#layouts)
   * [Designing Agents](#designing-agents)
      * [Baseline Team](#baseline-team)
@@ -101,6 +103,18 @@ If your agent times out or otherwise throws an exception, an error message will 
 
 
 ## Getting Started
+
+### Installation
+
+First, make sure you are in an active environment with Python 3.
+
+Next, from the root of the framework, install the required packages listed in `requirements.txt`.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Playing Your First Game
 
 By default, you can run a game with the simple `baseline_team` that the staff has provided:
 
