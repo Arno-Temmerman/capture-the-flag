@@ -155,6 +155,25 @@ The arrow keys control your character, which will change from ghost to Pacman wh
 
 By default, all games are run on the `defaultcapture` layout. To test your agent on other layouts, use the `-l` option. In particular, you can generate random layouts by specifying `RANDOM[seed]`. For example, `-l RANDOM13` will use a map randomly generated with seed 13.
 
+### Replays, Scores and Logs
+
+Use the `--record` and `--record-log` options to save replays and logs respectively.
+
+```bash
+python capture.py -r agents/team_repo_template/my_team.py -b baseline_team --record --record-log
+```
+
+A `.replay`, `.log` and `.json` file will be generated for the game that has been run, called `match_0`.
+You can find them in the newly created `www/contest_default/` directory at the root of the framework
+
+You can watch the replay as follows:
+
+```bash
+python capture.py --replay=www/contest_default/replays/match_0.replay
+```
+
+This feature will be especially useful the analyse the games of your team once the results of the tournament rounds are published.
+
 ## Designing Agents
 
 Unlike project 2, an agent now has the more complex job of trading off offense versus defense and effectively functioning as both a ghost and a Pacman in a team setting. Furthermore, the limited information provided to your agent will likely necessitate some probabilistic tracking (like project 4). Finally, the added time limit of computation introduces new challenges.
