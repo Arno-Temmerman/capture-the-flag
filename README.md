@@ -203,7 +203,7 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         eat (based on your team) in that square.
         """
 
-      def getFoodYouAreDefending(self, gameState):
+      def get_food_you_are_defending(self, gameState):
         """
         Returns the food you're meant to protect (i.e., that your
         opponent is supposed to eat). This is in the form of a
@@ -211,13 +211,13 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         your opponent can eat.
         """
 
-      def getOpponents(self, gameState):
+      def get_opponents(self, gameState):
         """
         Returns agent indices of your opponents. This is the list
         of the numbers of the agents (e.g., red might be "1,3,5")
         """
 
-      def getTeam(self, gameState):
+      def get_team(self, gameState):
         """
         Returns agent indices of your team. This is the list of
         the numbers of the agents (e.g., red might be "1,3,5")
@@ -231,7 +231,7 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         losing.
         """
 
-      def getMazeDistance(self, pos1, pos2):
+      def get_maze_distance(self, pos1, pos2):
         """
         Returns the distance between two points; These are calculated using the provided
         distancer object.
@@ -240,7 +240,7 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         Otherwise, this just returns Manhattan distance.
         """
 
-      def getPreviousObservation(self):
+      def get_previous_observation(self):
         """
         Returns the GameState object corresponding to the last
         state this agent saw (the observed state of the game last
@@ -248,7 +248,7 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         opponent's agent locations exactly).
         """
 
-      def getCurrentObservation(self):
+      def get_current_observation(self):
         """
         Returns the GameState object corresponding this agent's
         current observation (the observed state of the game - this
@@ -256,7 +256,7 @@ To get started designing your own agent, we recommend subclassing the `CaptureAg
         exactly).
         """
 
-      def debugDraw(self, cells, color, clear=False):
+      def debug_draw(self, cells, color, clear=False):
         """
         Draws a colored box on each of the cells you specify. If clear is True,
         will clear all old drawings before drawing on the specified cells.
